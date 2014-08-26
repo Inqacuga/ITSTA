@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_STP_LoggedIn_Master.master.cs" Inherits="SelfTestProgram.Masterpages._STP_LoggedIn_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Self Testing Program Login</title>
+    <asp:ContentPlaceHolder ID="stp_NavHeader" runat="server">         
+    <meta charset="utf-8" />
+    <meta name="author" content="Sean Michaels (c)2014" /> 
+    <meta name="description" content="A User Generated Self Testing Program" />
+    <link rel="stylesheet" class="text/css" href="~/App_Themes/STPTheme.css" >
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formLoggedIn" runat="server">
+    <div class="navbar">
+
+    </div>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="cphLoggedInMenus" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
