@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_Anon.Master.cs" Inherits="Masterpages_Anon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>ITSTA Welcome/Login</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sean Michaels (c)2014" /> 
+    <meta name="description" content="A User Generated Self Testing Program" />
+    <link rel="stylesheet" class="text/css" href="../App_Themes/DefaultTheme.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">     
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmAnonMaster" runat="server">
+        <div class="anonlogo anonWelcome">
+            <span class="anonfullTitle">IT Self Test Application</span>
+            <br />
+            <span class="anonlogo"><a href="~/ITSTA.aspx">ITSTA</a></span>
+        </div>
+        <div class="anonContent">
+            <asp:ContentPlaceHolder ID="cphAnonContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="anonFooter">
+            <br /><hr />
+            Written by <a href="http://inquiry.cfcrusaders.org/"> Sean Michaels - 2014 </a>
+        </div>
+    </form>
+</body>
+</html>
