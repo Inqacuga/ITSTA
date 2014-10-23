@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Summary description for Tests
+/// Summary description for ITSTA
 /// </summary>
-public class Tests
+public class ITSTA
 {
-	public Tests()
+	public ITSTA()
 	{
 		//
 		// TODO: Add constructor logic here

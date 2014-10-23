@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_LoggedIn.Master.cs" Inherits="Users_LoggedIn" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ITSTA</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sean Michaels &copy 2014" />
+    <meta name="description" content="A User Generated Self Testing Program" />
+    <link rel="stylesheet" class="text/css" href="~/App_Themes/DefaultTheme.css" />
+
+    <asp:ContentPlaceHolder ID="itsta_NavHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="formLoggedIn" runat="server">
+        <div class="contentArea">
+            <div class="navbar">
+                <a class="logo" href="Dashboard.aspx">ITSTA</a>
+                <a class="navset" href="NewTest.aspx">Make New Test</a>
+                <a class="navset" href=""
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="cphUserMenus" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+                <hr />
+                <a href="Dashboard.aspx">Home</a> &nbsp|&nbsp <asp:linkbutton runat="server" ID="lbnLogout" href="Logout.aspx" Text="Logout" OnClick="lbnLogout_Click"></asp:linkbutton>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
